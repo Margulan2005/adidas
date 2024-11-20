@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React from 'react'
 export class Categories extends React.Component {
     constructor(props) {
         super(props)
@@ -24,20 +23,21 @@ export class Categories extends React.Component {
                 {
                     key: "All",
                     name: "All"
-                }
+                },
             ]
         }
     }
-
+    
     render() {
-        return (
-            <div className="Categories">
+        return(
+            <div className = "categories">
                 {this.state.categories.map(el => (
-                    <div key={el.key} onClick={() => this.props.chooseCategory(el.key)}>{el.name}</div>
+                        <div key = {el.id} onClick={() => this.props.chooseCategory(el.key)}>{el.name}</div>
                 ))}
             </div>
         )
     }
+
 }
 
 export default Categories

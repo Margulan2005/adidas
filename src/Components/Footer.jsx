@@ -1,10 +1,9 @@
 import React from 'react'
 
-export default function Footer() {
+export default function () {
   return (
-    <div style={{ textAlign: 'center', margin: '20px 0' }}>
+    <footer>
       All rights reserved &copy;
-    </div>
+    </footer>
   )
 }
-
